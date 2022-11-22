@@ -1,0 +1,129 @@
+body{
+    background-color: #898989;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.loginform{
+    
+    display: flex;
+    padding-left: 30%;
+    padding-right: 30%;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+ }
+ label{
+     border: 0px solid;
+ }
+ 
+ 
+#passW{
+    position: relative;
+    width: 160px;
+    padding-left: 6px;
+    padding-right: 35px;
+    letter-spacing: 1px;
+    top: 3px;
+    border: 0px;
+    background-color: rgb(221, 222, 223);
+    margin-left: 10px; 
+    font-size: 15px;
+    box-shadow:  10px 5px 14px rgb(118, 117, 116);
+    height: 25px;  
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#userN{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    position: relative;
+    top: 3px;
+    width: 180px;
+    padding-left: 6px;
+    letter-spacing: 1px;
+    box-shadow:  10px 7px 10px rgb(118, 117, 116);
+    background-color: rgb(221, 222, 223);
+    margin-left: 10px;
+    font-size: 15px;
+    height: 25px;
+    border: 0px;
+}
+#userN:focus{
+    background-color: white;
+}
+#passW:focus{
+    background-color: white;
+}
+
+
+.signupB{
+    position: relative;
+    height: 40px;
+    cursor: pointer;
+    border: 2px;
+    border-radius: 20%;
+    width: 70px;
+    left: 14%;
+    margin-top: 14px;
+    background-color: rgb(102, 99, 99);
+    box-shadow:  10px 7px 10px rgb(96, 95, 93);
+}
+
+#sb-btn{
+    height: 40PX;
+    cursor: pointer;
+    border: 2px;
+    border-radius: 20%;
+    width: 70px;
+    margin-top: 14px;
+    left: 10%;
+    box-shadow:  10px 7px 10px rgb(96, 95, 93);
+    background-color: rgb(253, 106, 1);
+}
+
+
+#valid{
+    left: -323px;
+    position: absolute;
+    
+}
+
+.lNu{
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.lNpw{
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.inNout{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 70px;
+}
+
+#openedeye{
+    transform: translateX(-103%);
+    cursor: pointer;
+    visibility: hidden;
+    width: 30px;
+    position: relative;
+    right: 5px;
+    top: 9px;
+    
+    
+
+ }
+ 
+
+  

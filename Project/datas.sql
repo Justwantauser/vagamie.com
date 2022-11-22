@@ -1,0 +1,8 @@
+
+CREATE TABLE users
+(
+id INT PRIMARY KEY,
+name VARCHAR(30),
+dob DATETIME,
+email VARCHAR(40)
+);

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="img/FaviconDARKtheme.png" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" href="img/faviconLIGHTtheme" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vagamie</title>
+    <script src="https://kit.fontawesome.com/f8b00e3ac0.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/eel.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+</head>
+<body>
+    <form action="signin()" class="loginform" id="LGform">
+        <center>
+            <div class="inside">
+                <div class="lNu">
+                    <label  style="font-size: 30px;"  for="userN">Username</label>
+                    <input type="text" id="userN" placeholder="Inser a username" required>
+                </div>
+                <br><br>
+                <div class="lNpw">
+                <label style="font-size: 30px;" id="pwL" for="passW">Password</label>
+                <input type="password" id="passW"  placeholder=" Inser your password" required>
+                <span id="openedeye" onclick="reveal()"  class="fa fa-eye fa-1x"></span>
+                </div>
+                
+                <br><br>
+                <div class="inNout">
+                    <input type="submit" onclick="secure()" name="submit" id="sb-btn" value="Sign in" >
+                    <button class="signupB" type="button">Sign up</button>
+                    <h3 id="valid"> Not sure </h3> 
+
+                </div>
+
+            </div>
+  
+            
+        </center>
+      
+    </form>
+<script src="script.js"></script>
+<script src="main.js"></script>
+
+</body>
+ 
