@@ -161,27 +161,37 @@ datalist{
 /*all about notification icon*/
 
 #noti{
+    background: none;
     z-index: 4;
     position: absolute;
     right: 25%;
+    top: 50%;
+    height: 45px;
+    width: 40px;
+    transform: translateY(-50%);
     transition: ease-in 0.3s;
-    background: none;
     border: none;
 }
 #noti button{
     border: none;
+    font-size: 15px;
     background: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 #noti_icon{
-    color: #006FF0;
+    transform: translateX(50%);
+    top: 50%;
     background: none;
+    position: relative;
+    transform: translateY(-45%);
+    color: #006FF0;
     cursor: pointer;
     border: 0px;
 }
-#noti a{
-    filter: brightness(0);
-}
+
 
 #noti #notiA #noti_icon:hover+#nHOVER{
     opacity: 1;
@@ -246,8 +256,9 @@ datalist{
 
 
 #update_dot{
-    top: 18px;
-    left: 15px;
+    top: 10%;
+    z-index: 5;
+    left: 20px;
     background-color: #710FFA;
     border-radius: 50%;
     width: 20px;
@@ -258,8 +269,10 @@ datalist{
 /*all about chat icon*/
 #chat{
     z-index: 3;
-    top: 30px;
+    top: 50%;
+    transform: translateY(-50%);
     cursor: pointer;
+    font-size: 25px;
     transition:ease all .5s ;
     position: absolute;
     right: 15%;
@@ -1063,7 +1076,7 @@ input[type = "checkbox"]:checked ~ #bar{
         transform: translateX(-70%);
     }
     #chat{
-        right: 10%;
+        right: 7%;
     }
     .carousel{
         left: 26vw;
@@ -1119,7 +1132,7 @@ input[type = "checkbox"]:checked ~ #bar{
 
 @media (max-width: 750px) {
     #chat{
-        right: 10%;
+        right: 7%;
     }
     #noti{
         right: 25%;
@@ -1195,13 +1208,13 @@ input[type = "checkbox"]:checked ~ #bar{
         transform: translateX(-200px);
     }
     #searchI{
-        left: -40%;
+        left: -10%;
     }
     #chat{
-        left: 55%;
+        left: 75%;
     }
     #noti{
-        left: 25%;
+        left: 45%;
 
     }
     #trendingIcon{
