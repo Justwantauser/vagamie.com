@@ -76,14 +76,15 @@ datalist{
 }
 
 
-
+/* about our logo */
 .logo{
     margin: 10px;
+    display: flex;
+    flex-shrink: 0;
     position: relative;
     height: 100%;
     transition: .2s ease;
     margin-top: 25px;
-    display: flex;
     flex-direction: row;
     font-size: 40px;
     left: -0px;
@@ -100,6 +101,7 @@ datalist{
     vertical-align: middle;
     pointer-events: none;
 }
+
 
 
 .headlines .Nav{
@@ -125,6 +127,8 @@ datalist{
     transform: translateX(-103%);
 }
 #connect #connectA:hover+#cHOVER{
+    transform: translateY(-5px);
+    transition: .3s ease 1s;
     opacity: 1;
 }
 #cHOVER{
@@ -194,6 +198,8 @@ datalist{
 
 
 #noti #notiA #noti_icon:hover+#nHOVER{
+    transform: translateY(-5px);
+    transition: .3s ease 1s;
     opacity: 1;
 }
 #nHOVER{
@@ -203,9 +209,9 @@ datalist{
     z-index: 0;
     margin-top: 15px;
     background-color: white;
-    width: 135px;
+    text-align: center;
+    width: 140px;
     height: 27px;
-    padding-left: 10px;
     user-select: none;
     border-radius: 10px;
 }
@@ -298,7 +304,7 @@ datalist{
 /*search bar */
 #searchbar{
     z-index: 3;
-    transition:ease all .2s ;
+    transition:ease all .2s;
     width: 240px;
     top: 20px;
     height: 40px;
@@ -1128,6 +1134,14 @@ input[type = "checkbox"]:checked ~ #bar{
     #signout-btn{
         font-size: 22px;
     }
+    #searchbar{
+        left: 10%;
+        transition: .2s ease all .2s;
+
+    }
+    #searchI{
+        left: 40%;
+    }
 }
 
 @media (max-width: 750px) {
@@ -1165,6 +1179,9 @@ input[type = "checkbox"]:checked ~ #bar{
     }
     .carousel{
         left: 18vw;
+    }
+    .logo{
+        left: -10px;
     }
 }
 @keyframes theme_fade {

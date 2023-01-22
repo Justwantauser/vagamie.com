@@ -159,43 +159,6 @@ dark_themeB.addEventListener('click', function(){
 
 
 
-function searched(){
-    let searchC = document.getElementById('searchI')
-    var result = document.getElementById('searchbar').value;
-    if(result === "sandell"){
-        window.location = ('index.html')
-    }
-}
-
-function changepage(){
-    var searchb = document.getElementById("searchbar")
-    var x = document.getElementById("searchbar").value
-    if(x === "dog"){
-        window.location = ('index.html')
-
-    }
-}
-
-function ddL(){
-    var dataL = document.getElementById('op1').value
-    var x = document.getElementById("searchbar").value
-    if (x === "v"){
-        dataL = "Vagamie"
-    
-    }
-}
-
-function profiles(){
-    var sure = document.getElementById('sure')
-    var userN = document.getElementById('gloos').innerHTML
-    var loginN = document.getElementById('userN')
-    sure.addEventListener('click', function(){
-        userN = "sasf"
-    })
-}
-
-
-
 //sends to other page
 
 function premiumpage(){
@@ -369,6 +332,15 @@ function notification(){
     
     
 }
+
+// disable zooming
+
+document.addEventListener("wheel", function(event) {
+    if (event.ctrlKey) {
+        event.preventDefault();
+    }
+}, { passive: false });
+
 
 /*window.addEventListener('mouseup', e =>{
     

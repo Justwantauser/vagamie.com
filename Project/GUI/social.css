@@ -1,6 +1,8 @@
 
 
 .carousel{
+    display: flex;
+    flex-shrink: 0;
     width: 38vw;
     height: 50vh;
     position: absolute;
